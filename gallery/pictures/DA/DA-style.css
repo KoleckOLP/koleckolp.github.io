@@ -1,0 +1,93 @@
+@charset "UTF-8"
+
+article, aside, footer, header, main, nav, section{
+	display: block;
+}
+
+@font-face {
+	font-family: Lucida_Console;
+	src: url(../../Lucida_Console.woff)
+}
+
+@font-face{
+	font-family: Antiqua;
+	src: url(../../Antiqua.woff);
+}
+
+html{
+	background-color: grey;
+}
+body{
+	font-family: Lucida_Console;
+	height: 500px; width: 925px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#left{
+	float: left;
+}
+#right{
+	float: right;
+}
+header{
+	font-variant: small-caps;
+	height: 70px;
+	text-align: center;
+	float: none;
+	background-color: white;
+	margin-bottom: 10px;
+	text-shadow: 10px -5px 2px grey, 10px -5px 2px #CC9933;
+	font-size: 17.5px;
+	border: 1px solid black;
+	box-shadow: 5px -5px 6px #585858;
+}
+nav{
+	font-family: Antiqua;
+	text-shadow: 3px -3px 2px #CC9933;
+	background-color: white;
+	margin-bottom: 10px;
+	letter-spacing: 6.66px;
+	text-align: center;
+	float: none;
+	border: 1px solid black;
+	box-shadow: 5px -5px 6px #585858;
+}
+article{
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 5px -5px 6px #585858;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+footer{
+	padding: 4px;
+	clear: both;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 5px -5px 6px #585858;
+	margin-bottom: 10px;
+}
+#contact{
+	float: right;
+	font-family: serif;
+}
+p{
+	float: none;
+}
+#KoleckOLP{
+	font-size: 25px;
+	font-family: Algeria;
+}
+a:link{
+	color: #666600;
+	letter-spacing: 2px;
+	text-decoration: none
+}
+a:hover{
+	color:red;
+}
+li{
+	display: inline;
+}
+

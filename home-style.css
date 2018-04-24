@@ -1,0 +1,112 @@
+@charset "UTF-8"
+
+article, aside, footer, header, main, nav, section{
+	display: block;
+}
+
+@font-face{
+	font-family: ALGER;
+    src: url(ALGER.woff);
+}
+
+body{
+	background-color: grey;
+	width: 918px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#left{
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
+header{
+	border: 1px solid black;
+	background-color: white;
+	box-shadow: 5px -5px 6px #585858;
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+#KoleckOLP{
+	font-size: 25px;
+	font-family: ALGER;
+}
+
+#ntx{
+	width: 412px;
+	font-family: Arial;
+	float: left;
+	margin-top: 13px;
+	margin-left: 125px;
+	margin-right: 0px;
+}
+
+#radIO{
+	width: 220px;
+	float: right;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+#musac{
+	margin-top: 4px;
+	float: left;
+	font-size: 10px;
+}
+
+nav{
+	border: 1px solid black;
+	background-color: white;
+	box-shadow: 5px -5px 6px #585858;
+	text-align: center;
+	text-shadow: 3px -3px 2px #CC9933;
+	letter-spacing: 3px;
+	float: none;
+	margin-bottom: 10px;
+}
+
+li{
+	display: inline;
+}
+
+a:link{
+	color: #666600;
+	text-decoration: none
+}
+a:hover{
+	color:red;
+}
+
+article{
+	border: 1px solid black;
+	background-color: white;
+	box-shadow: 5px -5px 6px #585858;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+#ad{
+	float: right;
+}
+
+footer{
+	padding: 4px;
+	clear: both;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 5px -5px 6px #585858;
+	margin-bottom: 10px;
+}
+
+#contact{
+	float: right;
+	margin-right: 7px;
+}
+
+
