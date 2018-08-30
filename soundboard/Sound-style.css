@@ -1,192 +1,132 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-article, aside, footer, header, main, nav, section{
-	display: block;
+@font-face{
+	font-family: ALGER;
+    src: url(ALGER.woff);
 }
 
-
 html{
-	background-color: grey;
+	-webkit-text-size-adjust: none;
+	background-color: rgb(128, 128, 128);
 }
 
 body{
-	font-family: sans-serif;
-	height: 500px; width: 925px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#left{
-	float: left;
-}
-
-#right{
-	float: right;
+	font-family: Arial;
 }
 
 header{
-	border: 1px solid black;
-	background-color: white;
-	box-shadow: 5px -5px 6px #585858;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 	height: 70px;
 	margin-bottom: 10px;
 }
 
-#ntx{
-	width: 412px;
-	font-family: Arial;
+img.KOPicl{
+	height: 70px;
 	float: left;
-	margin-top: 13px;
-	margin-left: 125px;
-	margin-right: 0px;
+}
+
+div.name{
+	padding-top: 5px;
+	margin-left: 200px;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+img.KOPicr{
+	height: 70px;
+	float: right;
 }
 
 nav{
-	font-family: Antiqua;
-	text-shadow: 3px -3px 2px #CC9933;
-	background-color: white;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 	margin-bottom: 10px;
-	letter-spacing: 6.66px;
 	text-align: center;
-	float: none;
-	border: 1px solid black;
-	box-shadow: 5px -5px 6px #585858;
+	padding: 2px;
 }
 
-article{
-	background-color: white;
-	border: 1px solid black;
-	box-shadow: 5px -5px 6px #585858;
-	margin-bottom: 10px;
-	padding: 10px;
+ul.nav{
+	display: inline;
+	list-style-type: none;
 }
 
-footer{
-	padding: 4px;
-	clear: both;
-	background-color: white;
-	border: 1px solid black;
-	box-shadow: 5px -5px 6px #585858;
-	margin-bottom: 10px;
-}
-
-#contact{
-	float: right;
-	font-family: serif;
-}
-
-p{
-	float: none;
-	font-size: 10px;
-}
-
-#KoleckOLP{
-	font-size: 25px;
-	font-family: Algeria;
-}
-
-a:link{
-	color: #666600;
-	letter-spacing: 2px;
-	text-decoration: none
-}
-
-a:hover{
-	color:red;
-}
-
-li{
+li.nav{
 	display: inline;
 }
 
-h2{
+#space{
+	margin-right: 40px;
+}
+
+article{
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+	padding: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	overflow: hidden; 
 	text-align: center;
 }
 
-#olevo{
-	float: left;
-	width: 140px;
-	padding: 0px;
-	border: 1px solid white;
-	margin-right: 10px;
+div.line{
+	/*border: 2px solid red;*/
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
-#elevo{
-	float: left;
-	width: 140px;
-	padding: 0px;
-	border: 1px solid white;
-	border-right: 1px solid black;
-	margin-right: 10px;
-}
-
-#llevo{
-	float: left;
-	width: 140px;
-	padding: 0px;
-	border: 1px solid white;
-}
-
-#clevo{
-	float: left;
-	width: 140px;
-	padding: 0px;
-	margin-right: 762px;
-	border: 1px solid white;
-	border-right: 1px solid black;
-}
-
-#e2levo{
-	float: left;
-	width: 140px;
-	padding: 0px;
-	margin-right: 305px;
-	border: 1px solid white;
-	border-right: 1px solid black;
-}
-
-#e1levo{
-	float: left;
-	width: 140px;
-	padding: 0px;
-	margin-right: 153px;
-	border: 1px solid white;
-	border-right: 1px solid black;
-}
-
-#wolevo{
-	float: left;
-	width: 102px;
-	padding: 0px;
-	border: 1px solid white;
-	margin-right: 10px;
-}
-
-#wllevo{
-	float: left;
-	width: 102px;
-	padding: 0px;
-	border: 1px solid white;
-}
-
-
-p{
-	font-size: 15px;
+div.player{
 	text-align: center;
+	border: 1px solid black;
+	width: 105px;
+	float: left;
 }
 
-h5{
-	text-align: center;
+div.playere{
+	border: 1px solid white;
+	width: 105px;
+}
+
+#play{
+	width: 50px;
+	height: 50px;
+}
+
+footer{
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+	padding: 2px;
+}
+
+div.copy{
+	margin-left: 2px;
+	float: left;
+}
+
+div.contact{
+	margin-right: 2px;
+	float: right;
+}
+
+a.cln{
+	font-weight: bold;
+}
+
+a:link{
+	color: rgb(77, 10, 202);
+	text-decoration: none;
+}
+a:hover{
+	color:rgb(255, 0, 0);
+}
+
+div.scrt{
 	color: red;
 }
-
-#player{
-	height: 30px;
-	width: 140px;
-}
-
-#wplayer{
-	height: 30px;
-	width: 102px;
-}
-
