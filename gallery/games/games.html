@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KoleckOLP</title>
+	<link rel="shortcut icon" href="../../dot.ico"  type="image/x-icon">
+	<link rel="stylesheet" href="games-style.css">
+	
+	<script> <!-- script for search-->
+		function myFunction() {
+		// Declare variables
+		var input, filter, ul, li, a, i;
+		input = document.getElementById('myInput');
+		filter = input.value.toUpperCase();
+		ul = document.getElementById("myUL");
+		li = ul.getElementsByTagName('li');
+
+		// Loop through all list items, and hide those who don't match the search query
+			for (i = 0; i < li.length; i++) {
+			a = li[i].getElementsByTagName("a")[0];
+			if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				li[i].style.display = "";
+			} else {
+				li[i].style.display = "none";
+			}
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<header>
+		<img class="KOPicl" src="../../KOPic.png" alt="Logo">
+		<img class="KOPicr" src="../../KOPic.png" alt="Logo">
+		
+		<div class="name">Everything about KoleckOLP<br>
+						  Games</div>
+
+	</header>
+
+	<nav>
+		<ul class="nav">
+			<li class="nav" id="space"><a class="cln" href="../../index.html">Home</a></li>
+			<li class="nav" id="space"><a class="cln" href="../pictures/pictures.html">Pictures</a></li>
+			<li class="nav" id="space"><a class="cln" href="../videos/videos.html">Videos</a></li>
+		</ul>
+	</nav>
+
+	<article>
+		<div class="move">
+			<h3>All the flash Ganes open a new tab in resolution roughly 800x600 to work on 99% of devices. You can go fullcreen with the download/fullscreen button on most of the browsers. (not chrome thoe)</h3>
+		</div>
+		<a class="hidden" target="_blank" href="adult/adult.html"><img src="button.png"></a>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="search by year or name..."> input year, post name or latest/oldest
+
+		<ul id="myUL">
+			<li><a id="nadps" href="#"><h2>#Flash Games:</h2></a></li>
+			<li><a target="_blank" href="flash/sh/sh1.html"><h2>Shift Heads 1</h2></a></li>
+			<li><a target="_blank" href="flash/sh/sh2.html"><h2>Shift Heads 2</h2></a></li>
+			<li><a target="_blank" href="flash/sh/sh3.html"><h2>Shift Heads 3</h2></a></li>
+			<li><a target="_blank" href="flash/sh/sh4.html"><h2>Shift Heads 4</h2></a></li>
+			<li><a target="_blank" href="flash/sh/sh5.html"><h2>Shift Heads 5</h2></a></li>
+			<li><a target="_blank" href="flash/loveme/loveme1.html"><h2>Love Me 1</h2></a></li>
+			<li><a target="_blank" href="flash/loveme/loveme2.html"><h2>Love Me 2</h2></a></li>
+			<li><a target="_blank" href="flash/ram.html"><h2>Rinmaru Anime Maker</h2></a></li>
+			<li><a target="_blank" href="flash/fallguy.html"><h2>Freeway Fallguy</h2></a></li>
+			<li><a target="_blank" href="flash/sas2.html"><h2>Swords and Sandals 2</h2></a></li>
+			<li><a id="nadps" href="#"><h2>#Games I made:<h2></a></li>
+			<li><a target="_blank" href="other/train/train.html"><h2>Train</h2></a></li>
+			<li><a id="nadps" name="android" href="#"><h2>#Andoid Games:<h2></a></li>
+			<li><a target="_blank" href="android/acp.html"><h2>Assassins Creed Pirates</h2></a></li>
+			<li><a target="_blank" href="android/bae.html"><h2>Bully Anniversary Edition</h2></a></li>
+			<li><a target="_blank" href="android/bcp.html"><h2>Bridge Constructor Portal</h2></a></li>
+			<li><a target="_blank" href="android/bwf.html"><h2>BlockWorld Full</h2></a></li>
+			<li><a target="_blank" href="android/codboz.html"><h2>Call of Duty BlackOps Zombies</h2></a></li>
+			<li><a target="_blank" href="android/fb.html"><h2>Flappy Bird</h2></a></li>
+			<li><a target="_blank" href="android/ff1.html"><h2>Final Fantasy I</h2></a></li>
+			<li><a target="_blank" href="android/ff2.html"><h2>Final Fantasy II</h2></a></li>
+			<li><a target="_blank" href="android/ff3.html"><h2>Final Fantasy III</h2></a></li>
+			<li><a target="_blank" href="android/ff6.html"><h2>Final Fantasy VI</h2></a></li>
+			<li><a target="_blank" href="android/gta3.html"><h2>Grand Theft Auto III</h2></a></li>
+			<li><a target="_blank" href="android/gtavc.html"><h2>Grand Theft Auto Vice City</h2></a></li>
+			<li><a target="_blank" href="android/gtalcs.html"><h2>Grand Theft Auto Liberty City Stories</h2></a></li>
+			<li><a target="_blank" href="android/gtasa.html"><h2>Grand Thfet Auto San Andreas</h2></a></li>
+			<li><a target="_blank" href="android/gtactw.html"><h2>Grand Thfet Auto Chinatown Wars</h2></a></li>
+			<li><a target="_blank" href="android/lcg.html"><h2>Lara Croft GO</h2></a></li>
+			<li><a target="_blank" href="android/mc.html"><h2>Minecraft</h2></a></li>
+			<li><a target="_blank" href="android/mlphq.html"><h2>My Little Pony Harmony Quest</h2></a></li>
+			<li><a target="_blank" href="android/mlprr.html"><h2>My Little Pony Rainbow Runners</h2></a></li>
+			<li><a target="_blank" href="android/sth.html"><h2>Sonic the Hedgehod</h2></a></li>
+			<li><a target="_blank" href="android/srr.html"><h2>Shadowrun Returns</h2></a></li>
+			<li><a target="_blank" href="android/srddc.html"><h2>Shadowrun Dragonfall Drirectors cut</h2></a></li>
+		</ul>
+	</article>
+
+	<footer>
+		<div class="copy">©2015-2018 KoleckOLP copyright</div>
+		<div class="contact">Join my discord server <a class="cln" target="_blank" href="https://discord.gg/W88375j">here</a></div>
+	</footer>
+</body>
+
+</html> 

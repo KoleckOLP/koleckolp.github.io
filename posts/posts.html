@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KoleckOLP</title>
+	<link rel="shortcut icon" href="../dot.ico"  type="image/x-icon">
+	<link rel="stylesheet" href="posts-style.css">
+	
+	<script> <!-- script for search-->
+		function myFunction() {
+		// Declare variables
+		var input, filter, ul, li, a, i;
+		input = document.getElementById('myInput');
+		filter = input.value.toUpperCase();
+		ul = document.getElementById("myUL");
+		li = ul.getElementsByTagName('li');
+
+		// Loop through all list items, and hide those who don't match the search query
+			for (i = 0; i < li.length; i++) {
+			a = li[i].getElementsByTagName("a")[0];
+			if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				li[i].style.display = "";
+			} else {
+				li[i].style.display = "none";
+			}
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<header>
+		<img class="KOPicl" src="../KOPic.png" alt="Logo">
+		<img class="KOPicr" src="../KOPic.png" alt="Logo">
+		
+		<div class="name">Everything about KoleckOLP<br>
+						  All Posts</div>
+
+	</header>
+
+	<nav>
+		<ul class="nav">
+			<li class="nav" id="space"><a class="cln" href="../index.html">Home</a></li>
+			<li class="nav" id="space"><a class="cln" href="../gallery/gallery.html">Gallery</a></li>
+			<li class="nav" id="space"><a class="cln" href="../soundboard/sound.html">Soundboard</a></li>
+			<li class="nav" id="space"><a class="cln" href="../ulog/ulog.html">Update Log</a></li>
+			<li class="nav" id="space"><a class="cln" href="../lowspecs/low.html">Low Specs</a></li>
+		</ul>
+	</nav>
+
+	<article>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="search by year or name..."> input year, post name or latest/oldest
+
+		<ul id="myUL">
+		<li><a target="_blank" href="posts/latestpost.html"><h2>(latest)Long awaited update (17/08/2017)</h2></a></li>
+		<li><a target="_blank" href="posts/9post.html"><h2>Browser comparison! (12/11/2017)</h2></a></li>
+		<li><a target="_blank" href="posts/8post.html"><h2>The Truth of the Future! (03/11/2017)</h2></a></li>
+		<li><a target="_blank" href="posts/7post.html"><h2>I am back! (20/08/2017)</h2></a></li>
+		<li><a target="_blank" href="posts/6post.html"><h2>Migration and future (28/05/2017)</h2></a></li>
+		<li><a target="_blank" href="posts/5post.html"><h2>Dream comes true? (19.11.2016)</h2></a></li>
+		<li><a target="_blank" href="posts/4post.html"><h2>Language switching and Final OS for netbook? (28.11.2016)</h2></a></li>
+		<li><a target="_blank" href="posts/3post.html"><h2>Netbook or n”Eee”(ope) (14.10.2016)</h2></a></li>
+		<li><a target="_blank" href="posts/2post.html"><h2>Windows 10 upgrade experience (24.08.2016)</h2></a></li>
+		<li><a target="_blank" href="posts/1post.html"><h2>(oldest)Windows 8.1 (2015 eddited: 2016)</h2></a></li>
+	
+		</ul>
+	</article>
+
+	<footer>
+		<div class="copy">©2015-2018 KoleckOLP copyright</div>
+		<div class="contact">Join my discord server <a class="cln" target="_blank" href="https://discord.gg/W88375j">here</a></div>
+	</footer>
+</body>
+
+</html> 
