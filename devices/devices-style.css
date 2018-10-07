@@ -80,6 +80,47 @@ p.msg{
 	font-style: italic; 
 }
 
+nav{
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 2px;
+}
+
+ul.nav{
+	display: inline;
+	list-style-type: none;
+}
+
+li.nav{
+	display: inline;
+}
+
+#space{
+	margin-right: 40px;
+}
+
+a.cln{
+	font-weight: bold;
+	display: inline;
+}
+
+p.cln{
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	display: inline;
+}
+
+a:link{
+	color: rgb(77, 10, 202);
+	text-decoration: none;
+}
+a:hover{
+	color:rgb(255, 0, 0);
+}
+
 footer{
 	border: 1px solid rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
@@ -95,19 +136,6 @@ div.copy{
 div.contact{
 	margin-right: 2px;
 	float: right;
-}
-
-a.cln{
-	font-weight: bold;
-}
-
-a:link{
-	color: rgb(77, 10, 202);
-	text-decoration: none;
-}
-
-a:hover{
-	color:rgb(255, 0, 0);
 }
 
 #ntx{

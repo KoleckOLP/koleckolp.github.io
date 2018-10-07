@@ -62,6 +62,21 @@ li.nav{
 	margin-right: 40px;
 }
 
+a.cln{
+	font-weight: bold;
+}
+
+p.cln{
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	display: inline;
+}
+
+a{
+	text-decoration: none;
+}
+
 article{
 	border: 1px solid rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
@@ -104,23 +119,6 @@ div.copy{
 div.contact{
 	margin-right: 2px;
 	float: right;
-}
-
-a.cln{
-	font-weight: bold;
-}
-
-a:link{
-	color: rgb(77, 10, 202);
-	text-decoration: none;
-}
-
-a:hover{
-	color:rgb(255, 0, 0);
-}
-
-li{
-	display: inline;
 }
 
 #myInput{

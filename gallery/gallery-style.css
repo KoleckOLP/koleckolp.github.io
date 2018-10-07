@@ -107,6 +107,13 @@ a.cln{
 	font-weight: bold;
 }
 
+p.cln{
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	display: inline;
+}
+
 a:link{
 	color: rgb(77, 10, 202);
 	text-decoration: none;
