@@ -1,25 +1,20 @@
 @charset "UTF-8";
 
-@font-face{
-	font-family: ALGER;
-    src: url(ALGER.woff);
-}
-
 html{
 	-webkit-text-size-adjust: none;
-	background-color: rgb(200,103,220);
+	background-color: #1d0023;
+	color: #ffffff;
 }
 
 body{
-	width: 900px;
+	width: 925px;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: Arial;
 }
 
 header{
-	border: 1px solid rgb(0, 0, 0);
-	background-color: rgb(5,255,161);
+	border: 1px solid #ffffff;
+	background-color: #231828;
 	height: 70px;
 	margin-bottom: 10px;
 }
@@ -42,8 +37,8 @@ img.KOPicr{
 }
 
 article{
-	border: 1px solid rgb(0, 0, 0);
-	background-color: rgb(1,205,254);
+	border: 1px solid #ffffff;
+	background-color: #231828;
 	margin-bottom: 10px;
 	padding: 2px;
 	padding-left: 15px;
@@ -58,12 +53,12 @@ div.move{
 }
 
 #nadps{
-	color: black;
+	color: #ffffff;
 }
 
 footer{
-	border: 1px solid rgb(0, 0, 0);
-	background-color: rgb(5,255,161);
+	border: 1px solid #ffffff;
+	background-color: #231828;
 	overflow: hidden;
 	padding: 2px;
 }
