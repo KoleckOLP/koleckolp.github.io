@@ -1,0 +1,270 @@
+/*#0e1721 #191919 #000000*/
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000003;
+    color: white;
+}
+
+
+/*header start*/
+
+header {
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    background-color: #0e1721;
+}
+
+img.kopicl {
+    height: 75px;
+    float: left;
+}
+
+div.name {
+    padding-top: 5px;
+    margin-left: 200px;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+img.kopicr {
+    height: 75px;
+    float: right;
+}
+
+#acver {
+    font-size: 50%;
+}
+
+
+/*nav start*/
+
+nav {
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    background-color: #0e1721;
+    text-align: center;
+    padding: 2px;
+}
+
+ul.nav {
+    display: inline;
+    list-style-type: none;
+}
+
+li.nav {
+    display: inline;
+    margin-right: 60px;
+}
+
+p.cln {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline;
+}
+
+
+/*artile start*/
+
+article {
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    background-color: #0e1721;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@font-face {
+    font-family: alger;
+    src: url(alger.woff);
+}
+
+#koleckolp {
+    font-family: alger;
+    font-size: 150%;
+}
+
+
+/*footer start*/
+
+footer {
+    border: 1px solid #ffffff;
+    background-color: #0e1721;
+    overflow: hidden;
+}
+
+div.copy {
+    margin-left: 2px;
+    float: left;
+}
+
+div.contact {
+    margin-right: 2px;
+    float: right;
+}
+
+
+/*affects all*/
+
+a {
+    font-weight: bold;
+}
+
+a:link {
+    color: #1c74a6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #158c60;
+}
+
+a:hover {
+    color: #1ba6a6;
+}
+
+hr {
+    border: 1px solid #ffffff
+}
+
+
+/*Gallery*/
+
+div.choose {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+div.way {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 75px;
+    text-align: center;
+}
+
+#pic:hover+#picl {
+    color: #1ba6a6;
+}
+
+#vid:hover+#vidl {
+    color: #1ba6a6;
+}
+
+#gam:hover+#gaml {
+    color: #1ba6a6;
+}
+
+
+/*Devices*/
+
+#PCs {
+    margin-left: 15px;
+}
+
+#nonPCs {
+    clear: both;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#ex {
+    clear: both;
+}
+
+#specs {
+    float: right;
+    width: 540px;
+}
+
+#droid {
+    color: #00cc00;
+}
+
+#cons {
+    color: #ffa600;
+}
+
+#noud {
+    color: red;
+}
+
+
+/*Gallery / Pictures*/
+
+div.nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px dashed #ffffff;
+    text-align: center;
+}
+
+a.lnk {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.nol:hover {
+    color: #ffffff;
+}
+
+
+/*Gallery / Games*/
+
+a.hidden {
+    cursor: default;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#nadps {
+    color: #ffffff;
+    cursor: text;
+}
+
+
+/*Soundboard*/
+
+div.line {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+div.lline {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+div.player {
+    text-align: center;
+    border: 1px solid #ffffff;
+    width: 105px;
+    float: left;
+}
+
+div.playere {
+    border: 1px solid #0e1721;
+    width: 105px;
+}
+
+#play {
+    width: 50px;
+    height: 50px;
+}
