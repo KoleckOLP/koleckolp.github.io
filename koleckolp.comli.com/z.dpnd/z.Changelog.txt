@@ -1,5 +1,41 @@
+https://koleckolp.github.io
+update 3.7 to do:
+    games - Add Windows, Office Cracks + maybe some registry hacks and stuff
+    GAMES flash safe:
+        All - Fireboy and Water Girl games
+    GAMES flsah nsfw:
+        handpick my favourite nsfw flash games and redo the page
+    Games - Android - Minecraft catch up
+    Soundboard - fix secrets
+    SOUNDBOARD:
+        Sweetie Bot - Why do I have to be in the water (and fwer more cut in the folder)
+        trixie? - Great and powerfull roadblock
+        Leafy - pa pa pa pa pรก play that shit
+        they ask bout your age but yau say that yore fine but youre not really fine but you cant get it off cause they wouln neve understant
+
+done:
+    devices - replace with online exel sheet https://1drv.ms/x/s!AjSd1eSY-UzLg686fcArrVVwIbCetQ
+    yt-dl - replace with github page
+    videos - fix spelling
+    videos - add video
+SOUNDBOARD
+    Twincle - OH NOO
+GAMES
+    Android - relink everything (that was a pain)
+    Android - Added RAR 2
+
+weird state: 
+    games pictures don't need pictures
+    GAMES flash safe:
+        The Last Stand & 2 & Union City & Dead Zone (flash games) [well it's hard I could be working my ass of or carry Flashpoint or a flashdrive]
+    SOUNDBOARD:
+        MY MAAAN - https://youtu.be/lN7ehRI01-o
+
+update 3.8 to do:
+    pictures - do something with (once there is something to upload)
+
 ==============================================================================
 ================================NEW===========================================
 
 bugfix:
-    train icon
+    "Secret 2/2" to "Secret two"
