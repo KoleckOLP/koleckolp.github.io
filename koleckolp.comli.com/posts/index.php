@@ -3,7 +3,7 @@
     if (preg_match("/\d+p/", $p))
     {
         $p = substr_replace($p ,"", -1);
-        if ($p <= 11)
+        if ($p <= 12)
         {
             $p = $p."p";
             header("Location: ../?id=".$p);

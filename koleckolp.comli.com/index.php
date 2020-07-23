@@ -3,8 +3,57 @@
     $id = $_GET["id"];
     $json = file_get_contents('./gallery/games/games.json');
     $json_games = json_decode($json,true);
-    $agames = $json_games["android"];
-    $wgames = $json_games["windows"];
+
+$servername = "localhost";
+$username = "id1792536_koleckolp";
+$password = "1234";
+$dbname = "id1792536_kolecko";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT game FROM games WHERE platform='android'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $agames[] = $row['game'];
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
+$servername = "localhost";
+$username = "id1792536_koleckolp";
+$password = "1234";
+$dbname = "id1792536_kolecko";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT game FROM games WHERE platform='windows'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $wgames[] = $row['game'];
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
     if ($id == "")
     {
         $id = "home";
@@ -24,7 +73,7 @@
     else if (preg_match("/\d+p/", $id)) //There is one guy called kangalioo and he's a god.
     {
         $id = substr_replace($id ,"", -1);
-        if ($id <= 11)
+        if ($id <= 12)
         {
             $id = $id."p";
             echo "<script>history.replaceState(null, null, \"posts?p=$id\");</script>";
@@ -44,6 +93,11 @@
         $p = "../../";
         echo "<script>history.replaceState(null, null, \"gallery/games/windows?gm=$id\");</script>";
     }
+    else if($id == "sgpu")
+    {
+        $p = "../../";
+        echo "<script>history.replaceState(null, null, \"gallery/pictures/$id\");</script>";
+    }
     else
     {
         $id = base64_encode($id); //could replace with sha1 xD
@@ -53,7 +107,7 @@
             $p = "../../";
             echo "<script>history.replaceState(null, null, \"gallery/games/adult\");</script>";
         }
-        else if($id == "YmZl")
+        else if($id == "YmZl" || $id == "cHRj")
         {
             $id = base64_decode($id);
             $p = "../../../";
@@ -77,10 +131,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="author" context="KoleckOLP">
+    <meta name="description" context="Koleck's silly place for silly stuff">
 	<title><?php echo "K - ".$id ?></title>
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $p?>z.dpnd/w.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $p?>z.dpnd/w.ico">
 	<link rel="stylesheet" type="text/css" href="<?php echo $p?>z.dpnd/mainstyle.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="http://cs.allfont.net/allfont.css?fonts=arial-narrow" rel="stylesheet" type="text/css" />
 </head>
 <body> 
     <header>
@@ -88,7 +147,7 @@
         <img class="kopicr" src="<?php echo $p?>z.dpnd/kopic.png" alt="Logo">
 
         <div class="name">Everything about KoleckOLP<br>
-                            Webpage v3.5 💾 "floppy" <span id="acver">(actually: PHP edition 3.7)</span></div>
+                            Webpage v3.5 💾 "floppy" <span id="acver">(actually: PHP edition 3.75)</span></div>
     </header>
 
     <nav>
@@ -137,6 +196,10 @@
                 {
                     echo $home.$gallery;
                 }
+                else if($id == "sgpu")
+                {
+                    echo $home.$gallery;
+                }
                 
                 if($id == "YWQ0MTc=")
                 {
@@ -145,7 +208,7 @@
 
             ?>
     <?php
-        if (!preg_match("/\d+p/", $id) && !in_array($id, $agames) && !in_array($id, $wgames))
+        if (!preg_match("/\d+p/", $id) && !in_array($id, $agames) && !in_array($id, $wgames) && $id != "sgpu")
         {
             echo "<li class=\"nav\"><a target=\"_blank\" href=\"https://1drv.ms/x/s!AjSd1eSY-UzLg686fcArrVVwIbCetQ\">My Devices</a></li>";
 			echo "<li class=\"nav\"><a target=\"_blank\" href=\"https://github.com/KoleckOLP/koleckolp.github.io/releases\">Changelog</a></li>";
@@ -169,13 +232,22 @@
                 echo fread($myfile,filesize($id));
                 fclose($myfile);
             }
-            else if ($id == "gallery/pictures" || $id == "gallery/videos" || $id == "gallery/games")
+            else if ($id == "gallery/pictures" || $id == "gallery/videos")
             {
                 $na = substr($id, 8);
                 $id = $id."/".$na.".html";
                 $myfile = fopen($id, "r") or die("Unable to open file!");
                 echo fread($myfile,filesize($id));
                 fclose($myfile);
+            }
+            else if ($id == "gallery/games")
+            {
+                $na = substr($id, 8);
+                //$id = $id."/".$na.".php";
+                //$myfile = fopen($id, "r") or die("Unable to open file!");
+                //echo fread($myfile,filesize($id));
+                //fclose($myfile);
+                include('gallery/games/games.php');
             }
             else if (preg_match("/\d+p/", $id))
             {
@@ -186,17 +258,13 @@
             }
             else if(in_array($id, $agames))
             {
-                $id = "gallery/games/android/".$id.".html";
-                $myfile = fopen($id, "r") or die("Unable to open file!");
-                echo fread($myfile,filesize($id));
-                fclose($myfile);
+                $_GET["gm"]=$id;
+                include('gallery/games/android/android.php');
             }
             else if(in_array($id, $wgames))
             {
-                $id = "gallery/games/windows/".$id.".html";
-                $myfile = fopen($id, "r") or die("Unable to open file!");
-                echo fread($myfile,filesize($id));
-                fclose($myfile);
+                $_GET["gm"]=$id;
+                include('gallery/games/windows/windows.php');
             }
             else if($id == "YWQ0MTc=")
             {
@@ -205,7 +273,14 @@
                 echo fread($myfile,filesize($id));
                 fclose($myfile);
             }
-            else if($id == "YmZl")
+            else if($id == "sgpu")
+            {
+                $id = "gallery/pictures/".$id."/".$id.".html";
+                $myfile = fopen($id, "r") or die("Unable to open file!");
+                echo fread($myfile,filesize($id));
+                fclose($myfile);
+            }
+            else if($id == "YmZl" || $id == "cHRj")
             {
                 $id = base64_decode($id);
                 $id = "gallery/games/adult/games/".$id.".html";
@@ -219,7 +294,7 @@
     <footer>
 		<div class="copy">©2015-<script>document.write(new Date().getFullYear())</script> KoleckOLP copyright</div>
 		<div class="contact">Join my discord server <a class="cln" target="_blank" href="https://discord.gg/W88375j">here</a></div>
-	</footer>
+    </footer>
 	<script src="<?php echo $p?>z.dpnd/removeBanner.js"></script> <!--000webhost banner remove-->
 </body>
 </html>

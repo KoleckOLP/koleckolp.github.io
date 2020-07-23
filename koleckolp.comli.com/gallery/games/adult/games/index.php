@@ -1,8 +1,8 @@
 <?php
     $gm = $_GET["gm"];
-    if ($gm == "bfe")
+    if ($gm == "bfe" || $gm == "ptc")
     {
-        header("Location: ../../../..?id=bfe");
+        header("Location: ../../../..?id=".$gm);
     }
 ?>
 <head>

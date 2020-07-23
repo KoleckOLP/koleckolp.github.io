@@ -2,6 +2,10 @@
 
 html {
     -webkit-text-size-adjust: none;
+    font-family: 'Oswald', sans-serif;
+    /*transform: scale(1.25);
+    transform-origin: 0 0;
+    width: 80%;*/
 }
 
 body {
@@ -17,13 +21,14 @@ body {
 
 header {
     overflow: hidden;
-    border: 1px solid #ffffff;
-    margin-bottom: 10px;
+    /*border: 1px solid #ffffff;*/
+    margin-bottom: 3px;
     background-color: #0e1721;
+    border-radius: 4px;
 }
 
 img.kopicl {
-    height: 75px;
+    height: 76px;
     float: left;
 }
 
@@ -35,7 +40,7 @@ div.name {
 }
 
 img.kopicr {
-    height: 75px;
+    height: 76px;
     float: right;
 }
 
@@ -47,11 +52,12 @@ img.kopicr {
 /*nav start*/
 
 nav {
-    border: 1px solid #ffffff;
-    margin-bottom: 10px;
+    /*border: 1px solid #ffffff;*/
+    margin-bottom: 3px;
     background-color: #0e1721;
     text-align: center;
     padding: 2px;
+    border-radius: 4px;
 }
 
 ul.nav {
@@ -75,12 +81,15 @@ p.cln {
 /*artile start*/
 
 article {
-    border: 1px solid #ffffff;
-    margin-bottom: 10px;
+    font-family: 'Arial Narrow', arial;
+    /*border: 1px solid #ffffff;*/
+    margin-bottom: 3px;
     background-color: #0e1721;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 5px;
+    border-radius: 4px;
 }
 
 @font-face {
@@ -97,9 +106,12 @@ article {
 /*footer start*/
 
 footer {
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     background-color: #0e1721;
     overflow: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 4px;
 }
 
 div.copy {
@@ -267,4 +279,8 @@ div.playere {
 #play {
     width: 50px;
     height: 50px;
+}
+
+#tear {
+    border: 1px solid #000000;
 }
