@@ -1,0 +1,54 @@
+===============================================================================
+=====================================NEW=======================================
+
+add:
+    DESIGN
+        [done] modernise
+        [done] different font for article
+        [    ] scaling on high rez (not an issue)
+        [    ] do a css rewrite
+        [done] ~NEW~ find a better font
+    HOME
+        [    ] Third alternative; function https://pastebin.com/8SHgmiCm
+        [    ] Dog sounds link
+    POSTS
+        [done] new post.
+        [    ] ~NEW~ fix css on posts
+    GALLERY
+        [done] new crossroad pictures
+    SOUND
+        [done] Rarity f*ck me hard!
+        [done] Twincle OH NO
+        [done] Sweetie bot why do I have to be in the water? (and or other)
+        [    ] Trixie great and powerful roablock
+        [    ] leafy papapapapa play that shit
+        [    ] they ask me bout your age but you say that you're fine but you're not really fine but you just can't tell them couse they woeld never understant
+        [    ] MY MAAN
+        [    ] other mlp bloopers (try to find: "come to my house and fuck my sister")
+    GAMES
+        [done] make games in a category to be tabbed in
+        [done] all game relink
+        [    ] relink V2 (more of a DBfy)
+        [done] win - poke pic
+        [    ] win - cracks office, reg + fun
+        [    ] fls - fireboy and watergirl
+        [    ] fls The last stand games.
+        [    ] and - MC check
+        [    ] win sql
+        [done] rst - yt-dl link to github
+        [    ] give all games pictures? (probbaly the oposite) [sql??]
+        [done] and, win link to games page.
+        [done] add ES file link
+    VIDEOS
+        [done] Added a "new" vid.
+        [done] Fix spelling
+    PICTURES
+        [    ] Come up with what to do.
+        [    ] sexy cards page
+    DEVICES
+        [done] Replace with sheet.
+        [done] Replace yt-dl link with github link.
+    SECRET
+        [done] Fix secrets.
+        [    ] fls - handpick
+        [done] hide z.dpnd
