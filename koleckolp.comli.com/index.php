@@ -293,6 +293,5 @@ $conn->close();
 		<div class="copy">©2015-<script>document.write(new Date().getFullYear())</script> KoleckOLP copyright</div>
 		<div class="contact">Join my discord server <a class="cln" target="_blank" href="https://discord.gg/W88375j">here</a></div>
     </footer>
-	<script src="<?php echo $p?>z.dpnd/removeBanner.js"></script> <!--000webhost banner remove-->
 </body>
 </html>
