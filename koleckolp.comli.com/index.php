@@ -145,7 +145,7 @@ $conn->close();
         <img class="kopicr" src="<?php echo $p?>z.dpnd/kopic.png" alt="Logo">
 
         <div class="name">Everything about KoleckOLP<br>
-                            Webpage v3.5 💾 "floppy" <span id="acver">(actually: PHP edition 3.75)</span></div>
+                            Webpage v3.5 💾 "floppy" <span id="acver">(actually: PHP edition 3.8)</span></div>
     </header>
 
     <nav>
