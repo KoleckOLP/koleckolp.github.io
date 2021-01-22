@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Počítač: localhost:3306
--- Vytvořeno: Stř 26. srp 2020, 12:17
--- Verze serveru: 10.3.16-MariaDB
--- Verze PHP: 7.3.12
+-- Počítač: 127.0.0.1
+-- Vytvořeno: Pát 22. led 2021, 10:58
+-- Verze serveru: 10.4.17-MariaDB
+-- Verze PHP: 7.4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Databáze: `id1792536_kolecko`
+-- Databáze: `epiz_27718449_kolecko`
 --
 
 -- --------------------------------------------------------
@@ -64,6 +63,7 @@ INSERT INTO `games` (`game`, `name`, `link`, `platform`) VALUES
 ('mh', 'Moorhuhn (Crazy Chicken) UWP', 'https://mega.nz/file/YNI1iKxC#r7Cv332xJJj8cmkA5Q1s6bpCheRXWCvdTWzzqXGEkAA', 'windows'),
 ('mlphq', 'My Little Pony Harmony Quest', 'https://mega.nz/#F!YZoHHahZ!1MJkS3mMHybQoTq_nmjIjQ', 'android'),
 ('mlprr', 'My Little Pony Rainbow Runners', 'https://mega.nz/#F!RcYxRCbC!lUR7xVHpZxyPrWvVFUcegg', 'android'),
+('msoi', 'OInstall', 'https://mega.nz/file/lEwC2SRB#m62s01cdvgyCxoZkJKS63Rq27BSNfqvSa7zqkEslm0U', 'windows'),
 ('pokerom', 'PokeROM #25 Pikachu', 'https://mega.nz/#!dJI0lYxB!gN7b3nAmPUNiTGamoFV-X8q4YpsodKaUNE-jQhASqEY', 'windows'),
 ('srddc', 'Shadowrun Dragonfall Drirector\'s cut', 'https://mega.nz/#F!FBojnS7B!dtH9AE_JnW2CkffcePWs1g', 'android'),
 ('srr', 'Shadowrun Returns', 'https://mega.nz/#F!INR31aYT!uP6zSaOAtqHpumzdXQrqvA', 'android'),

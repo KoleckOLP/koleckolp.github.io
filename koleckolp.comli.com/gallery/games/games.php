@@ -21,13 +21,12 @@
 </script>
 
 <div>
-    <h3>All the flash Ganes open a new tab in resolution roughly 800x600 to work on 99% of devices.<br> You should be able to resize them by dragging the bottom left corner.</h3>
+    <h3>All the Flash games were removed please use <a href="https://bluemaxima.org/flashpoint/">BlueMaxima Flashpoint</a> instead<br>All software/apps on this page come with no warranty lol, you might get help on my dicord link in the footer.</h3>
 </div>
 <a class="hidden" target="_blank" href="games/adult"><img src="games/button.png"></a>
 
 <div class="nav">
     <ul class="nav">
-        <li class="nav" id="space"><a class="lnk" href="#flash">Flash Games</a></li>
         <li class="nav" id="space"><a class="lnk" href="#android">Android Games</a></li>
         <li class="nav" id="space"><a class="lnk" href="#windows">Windows Games</a></li>
         <li class="nav" id="space"><a class="lnk" href="#rest">Rest</a></li>
@@ -38,83 +37,20 @@
 
 <ul id="myUL">
     <li>
-        <a id="nadps" name="flash" href="#">
-            <h2>#Flash Games:</h2>
-        </a>
-    </li>
-    <ul>
-        <li>
-            <a target="_blank" href="games/flash?gm=tgg">
-                <h2>The Gun Game</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=isaac">
-                <h2>Binding of Isaac</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=sh1">
-                <h2>Shift Heads 1</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=sh2">
-                <h2>Shift Heads 2</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=sh3">
-                <h2>Shift Heads 3</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=sh4">
-                <h2>Shift Heads 4</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=sh5">
-                <h2>Shift Heads 5</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=loveme1">
-                <h2>Love Me 1</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=loveme2">
-                <h2>Love Me 2</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=ram">
-                <h2>Rinmaru Anime Maker</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=fallguy">
-                <h2>Freeway Fallguy</h2>
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="games/flash?gm=sas2">
-                <h2>Swords and Sandals 2</h2>
-            </a>
-        </li>
-    </ul>
-    <li>
         <a id="nadps" name="android" href="#">
             <h2>#Andoid Games:</h2>
         </a>
     </li>
     <ul>
 <?php
-$servername = "localhost";
-$username = "id1792536_koleckolp";
-$password = "1234";
-$dbname = "id1792536_kolecko";
+
+$json1 = file_get_contents('./z.dpnd/sql.json');
+$json_conn = json_decode($json1,true);
+
+$servername = $json_conn['servername'];
+$username = $json_conn['username'];
+$password = $json_conn['password'];
+$dbname = $json_conn['dbname'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -156,10 +92,6 @@ while($i < count($games))
     </li>
     <ul>
 <?php
-$servername = "localhost";
-$username = "id1792536_koleckolp";
-$password = "1234";
-$dbname = "id1792536_kolecko";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -209,6 +141,11 @@ while($i < count($games))
         <li>
             <a target="_blank" href="https://github.com/KoleckOLP/yt-dl">
                 <h2>yt-dl</h2>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://github.com/PopovEvgeniy/easykms">
+                <h2>easykms</h2>
             </a>
         </li>
     </ul>

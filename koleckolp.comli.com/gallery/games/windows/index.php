@@ -1,13 +1,13 @@
 <?php
     $gm = $_GET["gm"];
-    //$json = file_get_contents('../games.json');
-    //$json_games = json_decode($json,true);
-    //$games = $json_games["android"];
 
-$servername = "localhost";
-$username = "id1792536_koleckolp";
-$password = "1234";
-$dbname = "id1792536_kolecko";
+$json1 = file_get_contents('../../../z.dpnd/sql.json');
+$json_conn = json_decode($json1,true);
+
+$servername = $json_conn['servername'];
+$username = $json_conn['username'];
+$password = $json_conn['password'];
+$dbname = $json_conn['dbname'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

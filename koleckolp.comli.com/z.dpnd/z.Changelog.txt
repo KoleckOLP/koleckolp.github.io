@@ -31,14 +31,17 @@ add:
         [    ] relink V2 (more of a DBfy)
         [done] win - poke pic
         [    ] win - cracks office, reg + fun
-        [    ] fls - fireboy and watergirl
-        [    ] fls The last stand games.
+        [canl] fls - fireboy and watergirl
+        [canl] fls The last stand games.
         [    ] and - MC check
         [    ] win sql
         [done] rst - yt-dl link to github
         [    ] give all games pictures? (probbaly the oposite) [sql??]
         [done] and, win link to games page.
         [done] add ES file link
+        2021:
+        [done] Remove flash games
+        [done] add Oinstall and Easykms
     VIDEOS
         [done] Added a "new" vid.
         [done] Fix spelling
@@ -50,5 +53,5 @@ add:
         [done] Replace yt-dl link with github link.
     SECRET
         [done] Fix secrets.
-        [    ] fls - handpick
+        [canl] fls - handpick 
         [done] hide z.dpnd
