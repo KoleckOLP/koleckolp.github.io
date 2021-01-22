@@ -21,7 +21,7 @@
 </script>
 
 <div>
-    <h3>All the Flash games were removed please use <a href="https://bluemaxima.org/flashpoint/">BlueMaxima Flashpoint</a> instead<br>All software/apps on this page come with no warranty lol, you might get help on my dicord link in the footer.</h3>
+    <h3>All the Flash games were removed please use <a target="_blank" href="https://bluemaxima.org/flashpoint/">BlueMaxima Flashpoint</a> instead<br>All software/apps on this page come with no warranty lol, you might get help on my dicord link in the footer.</h3>
 </div>
 <a class="hidden" target="_blank" href="games/adult"><img src="games/button.png"></a>
 
